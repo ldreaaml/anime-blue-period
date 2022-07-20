@@ -1,0 +1,20 @@
+:root {
+  --darkBlue: #0e3875;
+  --primaryBlue: #0266b5;
+  --black: #414654;
+  --gray: #dddddb;
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+}
+
+.App {
+  padding: 0.5rem 3.5rem;
+  overflow: hidden;
+  color: var(--black);
+}
+
+@media screen and (max-width: 480px) {
+  .App {
+    padding: 0.5rem 1rem;
+  }
+}
