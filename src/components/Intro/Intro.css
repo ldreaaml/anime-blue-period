@@ -1,0 +1,11 @@
+.intro {
+  position: relative;
+  height: 85vh;
+}
+
+.banner img {
+  position: absolute;
+  top: -15%;
+  width: 100vw;
+  z-index: -1;
+}
