@@ -1,12 +1,14 @@
 .intro {
   position: relative;
-  height: 100vh;
-  overflow: auto;
+  height: 120vh;
+  /* overflow: auto; */
+  /* height: auto; */
 }
 
 .banner img {
   position: absolute;
   top: -15%;
   width: 100vw;
+  height: 120vh;
   z-index: -1;
 }
