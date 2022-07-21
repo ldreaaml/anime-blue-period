@@ -1,0 +1,36 @@
+.characters {
+  height: 100vh;
+}
+
+.c-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.c-title {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.c-title > span {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--primaryBlue);
+  text-shadow: 4px 4px #c9e7ff;
+}
+
+.c-title > span:nth-of-type(1) {
+  color: white;
+  -webkit-text-stroke: 0.1rem var(--primaryBlue);
+}
+
+.card-container {
+  height: 60vh;
+  width: 100vw;
+  /* background-color: lightgray; */
+  overflow: hidden;
+  display: flex;
+  /* justify-content: center; */
+  padding: 2vw;
+}

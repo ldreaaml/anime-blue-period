@@ -1,0 +1,42 @@
+.card {
+  width: 18vw;
+  position: relative;
+  height: 100vh;
+  /* cursor: pointer; */
+}
+
+/* .card:hover {
+  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+} */
+
+.c-background {
+  position: absolute;
+  width: 35vh;
+  height: 100vh;
+  transform: rotate(8deg);
+  top: -10rem;
+  left: 3rem;
+}
+
+.c-name {
+  position: absolute;
+  top: 52vh;
+  left: 2vw;
+}
+
+.c-name span {
+  font-size: 2.5vw;
+  color: white;
+}
+
+.c-name span:nth-of-type(2) {
+  position: absolute;
+  top: 4vh;
+  left: -1vw;
+}
+
+.card > img {
+  width: 45vh;
+  position: absolute;
+  z-index: 2;
+}
