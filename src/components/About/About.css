@@ -1,0 +1,69 @@
+.about {
+  height: 100vh;
+  overflow: auto;
+}
+
+.a-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.a-right {
+  flex-basis: auto;
+  display: flex;
+  position: relative;
+}
+.image img {
+  width: 20rem;
+  background-color: lightblue;
+}
+
+.image {
+  padding: 4rem;
+  z-index: 1;
+}
+
+.square1 {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  background-color: #9bb8d4;
+  right: 1rem;
+  top: 1rem;
+}
+
+.square2 {
+  position: absolute;
+  width: 10rem;
+  height: 15rem;
+  background-color: #c3e4f3;
+  left: 1rem;
+  top: 19rem;
+}
+
+.a-left {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  position: relative;
+  gap: 1rem;
+  margin-left: 2rem;
+  width: 100vw;
+  padding: 2rem;
+}
+
+.a-left span:nth-of-type(1) {
+  font-size: 3rem;
+  color: var(--primaryBlue);
+}
+
+.a-left span:nth-of-type(1) > span {
+  color: white;
+  background: var(--primaryBlue);
+  padding: 0.1rem 0.1rem;
+}
+
+.a-left span:nth-of-type(2) {
+  font-size: 1.7rem;
+}

@@ -6,7 +6,7 @@ const NavBar = () => {
     <div className="navBar">
       <div className="n-wrapper">
         <div className="n-left">
-          <img src={Logo} alt="" style={{ height: "12vh" }} />
+          <img src={Logo} alt="" style={{ height: "9vh" }} />
         </div>
         <div className="n-right">
           <div className="n-list">
