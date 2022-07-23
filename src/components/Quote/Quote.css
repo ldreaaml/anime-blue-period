@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
+
+.quote {
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.title > span:nth-of-type(2) {
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+  -webkit-text-stroke: 0.1rem var(--primaryBlue);
+}
+.title > :not(span:nth-of-type(2)) {
+  font-size: 4.2rem;
+  font-family: "Space Grotesk";
+  color: var(--primaryBlue);
+  padding: 1rem;
+}
+
+.q-wrapper {
+  /* background-color: lightgrey; */
+  position: relative;
+}
+
+.quote-cards {
+  display: flex;
+  justify-content: center;
+}
+.q-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  height: 70vh;
+  width: 24vw;
+  z-index: 2;
+}
+
+.card-active {
+  background: var(--primaryBlue);
+  color: white;
+}
+
+.card-inactive {
+  background: white;
+  color: var(--primaryBlue);
+  /* transform: scale(0.8); */
+  border: 0.2rem solid var(--primaryBlue);
+}
+
+.q-card > img {
+  box-shadow: 0px 19px 60px rgb(0 0 0 / 15%);
+  border: 0.2rem solid white;
+  border-radius: 100%;
+  width: 12vw;
+  height: 12vw;
+}
+
+.q-card > span {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.q-card > span:nth-of-type(1) {
+  font-size: 4rem;
+  font-family: "Space Grotesk";
+  /* padding: 1rem; */
+}
+
+/* decorations */
+
+.q-square1 {
+  width: 15rem;
+  height: 15rem;
+  background-color: #e4f3ff;
+  position: absolute;
+  left: 30vw;
+  top: -5vh;
+}
+
+.q-square2 {
+  width: 20rem;
+  height: 15rem;
+  background-color: #c7ddef;
+  position: absolute;
+  left: 55vw;
+  top: 60vh;
+}
