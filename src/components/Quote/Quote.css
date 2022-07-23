@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
 
 .quote {
-  min-height: 130vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
   gap: 3rem;
+  padding: 4rem 0;
 }
 
 .title {

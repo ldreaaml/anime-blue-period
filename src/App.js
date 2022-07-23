@@ -4,6 +4,7 @@ import Intro from "./components/Intro/Intro";
 import About from "./components/About/About";
 import Characters from "./components/Characters/Characters";
 import Quote from "./components/Quote/Quote";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Characters />
       <Quote />
+      <Footer />
     </div>
   );
 }
