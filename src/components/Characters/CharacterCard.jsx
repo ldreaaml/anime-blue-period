@@ -1,6 +1,6 @@
 import React from "react";
-import "./Card.css";
-const Card = ({ image, firstName, lastName, color }) => {
+import "./CharacterCard.css";
+const CharacterCard = ({ image, firstName, lastName, color }) => {
   return (
     <div className="card">
       <div className="c-background" style={{ background: `${color}` }}>
@@ -17,4 +17,4 @@ const Card = ({ image, firstName, lastName, color }) => {
   );
 };
 
-export default Card;
+export default CharacterCard;

@@ -1,7 +1,6 @@
 .characters {
-  min-height: 100vh;
+  min-height: 90vh;
   min-width: 1000px;
-  /* overflow: auto; */
 }
 
 .c-title {
@@ -24,7 +23,6 @@
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  /* align-items: center; */
   justify-content: center;
 }
 
@@ -34,17 +32,7 @@
   height: 30rem;
   min-height: 30vw;
   min-width: 95rem;
-  /* width: 100vw; */
-  /* background-color: lightgray; */
   overflow: hidden;
   display: flex;
   justify-content: center;
-  /* padding-right: 2rem; */
-  /* gap: 2rem; */
-  /* background-color: green; */
-}
-
-.card {
-  /* border: 2px solid chartreuse; */
-  /* z-index: 5; */
 }
