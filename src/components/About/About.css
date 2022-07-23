@@ -1,11 +1,12 @@
 .about {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .a-wrapper {
   display: flex;
   justify-content: center;
   padding: 2rem;
+  gap: 2rem;
 }
 
 .a-right {
@@ -47,10 +48,11 @@
   flex-direction: column;
   position: relative;
   gap: 1rem;
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
   width: 100vw;
   padding: 2rem;
-  min-width: 50vh;
+  max-width: 120ch;
+  min-width: 60ch;
 }
 
 .a-left span:nth-of-type(1) {

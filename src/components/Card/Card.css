@@ -1,42 +1,43 @@
 .card {
-  width: 18vw;
+  width: 16%;
   position: relative;
-  height: 100vh;
-  /* cursor: pointer; */
+  height: 100%;
 }
-
-/* .card:hover {
-  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
-} */
 
 .c-background {
+  cursor: pointer;
   position: absolute;
-  width: 35vh;
-  height: 100vh;
-  transform: rotate(8deg);
-  top: -10rem;
-  left: 3rem;
+  width: 95%;
+  height: 100%;
+  transform: skewX(-8deg);
 }
 
+.c-background:hover {
+  filter: brightness(105%);
+  transition: all 0.3s ease;
+}
 .c-name {
   position: absolute;
-  top: 52vh;
-  left: 2vw;
+  top: 85%;
+  left: -3%;
 }
 
 .c-name span {
-  font-size: 2.5vw;
+  font-size: 2.5rem;
   color: white;
 }
 
 .c-name span:nth-of-type(2) {
   position: absolute;
-  top: 4vh;
-  left: -1vw;
+  top: 60%;
+  left: -1rem;
 }
 
-.card > img {
-  width: 45vh;
+.c-image > img {
+  height: 125%;
+  width: 100%;
+  object-fit: cover;
   position: absolute;
   z-index: 2;
+  transform: skewX(8deg);
 }

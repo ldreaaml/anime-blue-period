@@ -55,4 +55,5 @@
   cursor: pointer;
   background: var(--primaryBlue);
   color: white;
+  transition: all 0.3s ease;
 }

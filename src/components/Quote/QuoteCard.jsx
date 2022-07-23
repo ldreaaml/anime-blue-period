@@ -4,7 +4,9 @@ import "./QuoteCard.css";
 const QuoteCard = ({ image, quote, character, isActive }) => {
   return (
     <div className={`q-card ${isActive ? "card-active" : "card-inactive"}`}>
-      <img src={image} alt="" />
+      <div className="card-image">
+        <img src={image} alt="" />
+      </div>
       <span>&#8220;</span>
       <span>{quote}</span>
       <hr />
