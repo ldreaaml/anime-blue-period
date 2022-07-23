@@ -34,7 +34,8 @@
 }
 
 .c-image > img {
-  height: 125%;
+  height: 95%;
+  top: 2%;
   width: 100%;
   object-fit: cover;
   position: absolute;
