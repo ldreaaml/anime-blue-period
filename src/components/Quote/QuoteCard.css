@@ -1,0 +1,56 @@
+
+.q-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  height: 70vh;
+  width: 24vw;
+  z-index: 2;
+}
+
+.card-active {
+  background: var(--primaryBlue);
+  color: white;
+}
+
+.card-active > hr {
+  size: 2px;
+  width: 80%;
+  color: white;
+  border-style: solid;
+}
+.card-inactive {
+  background: white;
+  color: var(--primaryBlue);
+  /* transform: scale(0.8); */
+  border: 0.2rem solid var(--primaryBlue);
+}
+
+.card-inactive > hr {
+  size: 2px;
+  width: 80%;
+  color: var(--primaryBlue);
+  border-style: solid;
+}
+
+.q-card > img {
+  box-shadow: 0px 19px 60px rgb(0 0 0 / 15%);
+  border: 0.2rem solid white;
+  border-radius: 100%;
+  width: 12vw;
+  height: 12vw;
+}
+
+.q-card > span {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.q-card > span:nth-of-type(1) {
+  font-size: 4rem;
+  font-family: "Space Grotesk";
+  /* padding: 1rem; */
+}
