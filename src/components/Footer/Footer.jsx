@@ -8,6 +8,7 @@ const Footer = () => {
         <span>Credits</span>
         <span>Design + Code by Dream</span>
       </div>
+      <div className="f-background"></div>
     </div>
   );
 };

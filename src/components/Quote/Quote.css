@@ -1,11 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
 
 .quote {
-  min-height: 100vh;
+  min-height: 110vh;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  gap: 3rem;
   padding: 4rem 0;
 }
 
@@ -51,8 +49,8 @@
   height: 15rem;
   background-color: #c7ddef;
   position: absolute;
-  left: 55vw;
-  top: 65vh;
+  left: 50rem;
+  top: 17rem;
 }
 
 .circle1 {

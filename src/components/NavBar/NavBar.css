@@ -32,14 +32,14 @@
   flex-wrap: nowrap;
 }
 
-.n-list > ul > li {
+.nav-link {
   font-size: 1.3rem;
   white-space: nowrap;
   color: var(--primaryBlue);
   vertical-align: text-bottom;
 }
 
-.n-list > ul > li:hover {
+.nav-link:hover {
   cursor: pointer;
 }
 

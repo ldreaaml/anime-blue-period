@@ -9,7 +9,7 @@ import "./Characters.css";
 
 const Characters = () => {
   return (
-    <div className="characters">
+    <div className="characters" id="Characters">
       <div className="c-wrapper">
         <div className="c-title">
           <span>CHARACTER</span>

@@ -1,6 +1,7 @@
 import React from "react";
 import "./NavBar.css";
 import Logo from "../../img/logo.png";
+import { Link } from "react-scroll";
 const NavBar = () => {
   return (
     <div className="navBar">
@@ -11,12 +12,25 @@ const NavBar = () => {
         <div className="n-right">
           <div className="n-list">
             <ul>
-              <li>HOME</li>
-              <li>ABOUT</li>
-              <li>CHARACTERS</li>
-              <li>QUOTES</li>
-              <li>
-                <a href="" className="button">
+              <Link spy={true} to="Intro" smooth={true}>
+                <li className="nav-link">HOME</li>
+              </Link>
+              <Link spy={true} to="About" smooth={true}>
+                <li className="nav-link">ABOUT</li>
+              </Link>
+              <Link spy={true} to="Characters" smooth={true}>
+                <li className="nav-link">CHARACTERS</li>
+              </Link>
+              <Link spy={true} to="Quotes" smooth={true}>
+                <li className="nav-link">QUOTES</li>
+              </Link>
+              <li className="nav-link">
+                <a
+                  href="https://www.netflix.com/nz/title/81318842"
+                  target="_blank"
+                  className="button"
+                  rel="noreferrer"
+                >
                   WATCH NOW
                 </a>
               </li>

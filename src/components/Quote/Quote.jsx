@@ -6,7 +6,7 @@ import bgcircle from "../../img/Background_circle.jsx";
 
 const Quote = () => {
   return (
-    <div className="quote">
+    <div className="quote" id="Quotes">
       <div className="title">
         <span>&#8220;</span>
         <span>Favourite Quotes</span>
