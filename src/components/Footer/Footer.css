@@ -10,11 +10,21 @@
   width: 100vw;
   justify-content: space-between;
   padding: 1rem;
+  align-items: end;
+  gap: 2rem;
 }
 
 .last-line > span {
   color: white;
-  z-index: 1;
+}
+.f-icons {
+  display: flex;
+  gap: 2rem;
+}
+.f-icon {
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 .f-background {
@@ -24,4 +34,5 @@
   width: 110vw;
   background: var(--darkBlue);
   transform: rotate(-3deg);
+  z-index: -1;
 }
