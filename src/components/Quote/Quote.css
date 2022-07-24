@@ -32,6 +32,7 @@
 .quote-cards {
   display: flex;
   justify-content: center;
+  height: 35rem;
 }
 /* decorations */
 
