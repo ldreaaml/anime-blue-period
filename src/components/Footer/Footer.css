@@ -1,38 +1,86 @@
 .footer {
-  min-height: 25vh;
+  min-height: 15rem;
   position: relative;
   display: flex;
-  align-items: flex-end;
+  padding-top: 5rem;
+}
+.f-background {
+  top: 5vh;
+  position: absolute;
+  height: 100rem;
+  width: 100rem;
+  background: var(--darkBlue);
+  z-index: -1;
+  transform: rotate(-3deg);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  justify-content: end;
+  gap: 1rem;
+  text-align: center;
 }
 
 .last-line {
   display: flex;
   width: 100vw;
-  justify-content: space-between;
-  padding: 1rem;
+  justify-content: space-evenly;
+  padding: 1rem 0;
   align-items: end;
   gap: 2rem;
 }
 
 .last-line > span {
   color: white;
+  display: flex;
+  flex: 1;
+  justify-content: center;
 }
-.f-icons {
+
+.f-icons-wrapper {
   display: flex;
   gap: 2rem;
 }
 .f-icon {
   color: white;
-  font-size: 2rem;
+  font-size: 1.3rem;
   cursor: pointer;
 }
 
-.f-background {
-  top: 5vh;
-  position: absolute;
-  height: 100vh;
-  width: 110vw;
-  /* background: var(--darkBlue); */
-  transform: rotate(-3deg);
-  z-index: -1;
+/* stats */
+
+.page-stats {
+  /* min-height: 20vh; */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.page-stats > span:nth-of-type(1) {
+  font-size: 2rem;
+}
+.page-stats > span:nth-of-type(2) {
+  font-size: 1.6rem;
+}
+
+.like-button {
+  overflow: hidden;
+  border-radius: 100%;
+  border: 0.3rem solid white;
+}
+
+.liked {
+  color: rgb(253, 161, 161);
+}
+
+.heart-icon {
+  padding: 1rem;
+  font-size: 2.2rem;
+  display: inline-block;
+  vertical-align: middle;
 }

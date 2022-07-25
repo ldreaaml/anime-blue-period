@@ -22,7 +22,7 @@ const firebaseConfig = {
     "https://like-counter-df95f-default-rtdb.asia-southeast1.firebasedatabase.app/",
 };
 
-const app = initializeApp(firebaseConfig);
+initializeApp(firebaseConfig);
 
 export const incrementLikes = () => {
   console.log("update");
@@ -34,14 +34,12 @@ export const incrementLikes = () => {
   });
 };
 
-// export const getLikesNumber = () => {
-//   const [likesCount, setLikeCounts] = useState(null);
-//   console.log("get");
-//   const db = getDatabase();
-//   const LikesCountRef = ref(db, "blue-period/page_likes");
+export const incrementViews = () => {
+  console.log("update");
+  const db = getDatabase();
 
-//   const LikesCount = onValue(LikesCountRef, (snapshot) => {
-//     const data = snapshot.val();
-//     return data;
-//   });
-// };
+  const LikesCountRef = ref(db, "blue-period");
+  update(LikesCountRef, {
+    page_views: increment(1),
+  });
+};
