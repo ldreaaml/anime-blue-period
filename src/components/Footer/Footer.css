@@ -2,13 +2,13 @@
   min-height: 15rem;
   position: relative;
   display: flex;
-  padding-top: 5rem;
+  padding-top: 7rem;
 }
 .f-background {
   top: 5vh;
   position: absolute;
-  height: 100rem;
-  width: 100rem;
+  height: 100vh;
+  width: 200vw;
   background: var(--darkBlue);
   z-index: -1;
   transform: rotate(-3deg);
