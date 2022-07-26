@@ -6,12 +6,13 @@ import { AiOutlineHome } from "react-icons/ai";
 import { incrementLikes, incrementViews } from "../../firebase";
 import { useState, useEffect } from "react";
 import { getDatabase, ref, onValue } from "firebase/database";
+import { motion } from "framer-motion";
+import { useSpring, animated, config, set, to } from "react-spring";
 
 const Footer = () => {
   const [likeCount, setLikeCount] = useState(0);
   const [viewCount, setViewCount] = useState(0);
   const [likeStatus, setLikeStatus] = useState(false);
-
   const getStatistic = () => {
     const db = getDatabase();
     const LikesCountRef = ref(db, "blue-period/page_likes");
@@ -34,6 +35,21 @@ const Footer = () => {
     setLikeStatus(!likeStatus);
   };
 
+  const { likesNumber } = useSpring({
+    // reset: true,
+    from: { likesNumber: 0 },
+    likesNumber: likeCount,
+    delay: 100,
+    config: config.molasses,
+  });
+
+  const { viewsNumber } = useSpring({
+    from: { viewsNumber: 0 },
+    viewsNumber: viewCount,
+    delay: 100,
+    config: config.molasses,
+  });
+
   return (
     <div className="footer">
       <div className="footer-content">
@@ -45,15 +61,29 @@ const Footer = () => {
               Like this page? Leave a <FaHeart /> !
             </span>
           )}
-          <div className="like-button" onClick={clickLike}>
+
+          <motion.div
+            className="like-button"
+            onClick={clickLike}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
             <IconContext.Provider value={{ className: "f-icon" }}>
               <FaHeart
                 className={`heart-icon ${likeStatus ? "liked" : "unlike"}`}
               />
             </IconContext.Provider>
-          </div>
+          </motion.div>
           <span>
-            This page now has total of {viewCount} Views and {likeCount} Likes
+            This page now has total of{" "}
+            <animated.span style={{ fontSize: "1.6rem" }}>
+              {viewsNumber.to((n) => n.toFixed(0))}
+            </animated.span>{" "}
+            Views and{" "}
+            <animated.span style={{ fontSize: "1.6rem" }}>
+              {likesNumber.to((n) => n.toFixed(0))}
+            </animated.span>{" "}
+            Likes
           </span>
         </div>
         <div className="last-line">
