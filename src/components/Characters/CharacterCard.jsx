@@ -3,10 +3,6 @@ import "./CharacterCard.css";
 import { motion } from "framer-motion";
 
 const CharacterCard = ({ image, firstName, lastName, color, description }) => {
-  const showDescription = () => {
-    // console.log("test");
-  };
-
   const [isHovered, setHovered] = useState(false);
 
   return (

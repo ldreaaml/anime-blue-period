@@ -1,48 +1,63 @@
 import React from "react";
 import "./About.css";
 import Blue from "../../img/blue.jpg";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 const About = () => {
-  const item = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-    },
-  };
   return (
     <div className="about" id="About">
       <div className="a-wrapper">
-        <motion.div className="a-left">
+        <motion.div
+          className="a-left"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
           <span>
             About <span>Blue</span> Period
           </span>
           <span>
-            Blue Period (Japanese: ブルーピリオド, Hepburn: Burū Piriodo) is a
-            Japanese manga series written and illustrated by Tsubasa Yamaguchi.
-            The series has been serialized in Kodansha's seinen manga magazine
-            Monthly Afternoon since June 2017 and has been collected in twelve
-            tankōbon volumes as of May 2022. The series is licensed in English
-            by Kodansha USA. An anime television series adaptation by Seven Arcs
-            aired from October to December 2021.
+            Second-year high school student Yatora Yaguchi is a delinquent with
+            excellent grades, but is unmotivated to find his true calling in
+            life. Yatora spends his days working hard to maintain his academic
+            standing while hanging out with his equally unambitious friends.
+            However, beneath his carefree demeanor, Yatora does not enjoy either
+            activity and wishes he could find something more fulfilling.
             <br />
             <br />
-            Blue Period (Japanese: ブルーピリオド, Hepburn: Burū Piriodo) is a
-            Japanese manga series written and illustrated by Tsubasa Yamaguchi.
-            The series has been serialized in Kodansha's seinen manga magazine
-            Monthly Afternoon since June 2017 and has been collected in twelve
-            tankōbon volumes as of May 2022. The series is licensed in English
-            by Kodansha USA. An anime television series adaptation by Seven Arcs
-            aired from October to December 2021.
+            While mulling over his predicament, Yatora finds himself staring at
+            a vibrant landscape of Shibuya. Unable to express how he feels about
+            the unusually breathtaking sight, he picks up a paintbrush, hoping
+            his thoughts will be conveyed on canvas. After receiving praise for
+            his work, the joy he feels sends him on a journey to enter the
+            extremely competitive Tokyo University of the Arts—a school that
+            only accepts one in every two hundred applicants.
+            <br />
+            <br />
+            Facing talented peers, a lack of understanding of the fine arts, and
+            struggles to obtain his parents’ approval, Yatora is confronted by
+            much adversity. In the hopes of securing one of the five prestigious
+            spots in his program of choice, Yatora must show that his
+            inexperience does not define him.
           </span>
         </motion.div>
         <div className="a-right">
           <div className="image">
             <img src={Blue} alt="" />
           </div>
-          <div className="square1"></div>
-          <div className="square2"></div>
+          <motion.div
+            className="square1"
+            initial={{ x: "-10rem", y: "10rem" }}
+            whileInView={{ x: 0, y: 0 }}
+            transition={{ duration: 1.5 }}
+          ></motion.div>
+          <motion.div
+            className="square2"
+            initial={{ x: "10rem", y: "-10rem" }}
+            whileInView={{ x: 0, y: 0 }}
+            transition={{ duration: 1.5 }}
+          ></motion.div>
         </div>
       </div>
     </div>
