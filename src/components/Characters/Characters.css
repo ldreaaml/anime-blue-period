@@ -1,6 +1,7 @@
 .characters {
   min-height: 100vh;
   min-width: 1000px;
+  padding-top: 1rem;
 }
 
 .c-title {
