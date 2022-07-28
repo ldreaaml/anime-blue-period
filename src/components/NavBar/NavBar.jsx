@@ -2,6 +2,8 @@ import React from "react";
 import "./NavBar.css";
 import Logo from "../../img/logo.png";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
+
 const NavBar = () => {
   return (
     <div className="navBar">
@@ -24,7 +26,7 @@ const NavBar = () => {
               <Link spy={true} to="Quotes" smooth={true}>
                 <li className="nav-link">QUOTES</li>
               </Link>
-              <li className="nav-link">
+              <motion.li className="nav-link" whileHover={{ scale: 1.1   }}>
                 <a
                   href="https://www.netflix.com/nz/title/81318842"
                   target="_blank"
@@ -33,7 +35,7 @@ const NavBar = () => {
                 >
                   WATCH NOW
                 </a>
-              </li>
+              </motion.li>
             </ul>
           </div>
         </div>

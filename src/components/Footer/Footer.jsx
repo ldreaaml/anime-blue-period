@@ -86,25 +86,29 @@ const Footer = () => {
             Likes
           </span>
         </div>
-        <div className="last-line">
+        <div className="final-line">
           <span>Credits</span>
           <span className="f-icons-wrapper">
             <IconContext.Provider value={{ className: "f-icon" }}>
-              <AiOutlineHome />
-              <a
+              <motion.a whileHover={{ scale: 1.2 }}>
+                <AiOutlineHome />
+              </motion.a>
+              <motion.a
                 href="https://github.com/ldreaaml/anime-blue-period"
                 target="_blank"
                 rel="noreferrer"
+                whileHover={{ scale: 1.2 }}
               >
                 <FaGithub />
-              </a>
-              <a
+              </motion.a>
+              <motion.a
                 href="https://www.figma.com/file/1E0JrQiUihnAWFp1ZUPWPH/Blue-Period?node-id=0%3A1"
                 target="_blank"
                 rel="noreferrer"
+                whileHover={{ scale: 1.2 }}
               >
                 <FaFigma />
-              </a>
+              </motion.a>
             </IconContext.Provider>
           </span>
           <span>Design + Code by Dream</span>

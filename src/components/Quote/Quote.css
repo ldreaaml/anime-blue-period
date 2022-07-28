@@ -1,10 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
 
 .quote {
-  min-height: 110vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 3rem 0;
+  /* padding: 3rem 0; */
+  /* background-color: aquamarine; */
+  align-items: center;
+  justify-content: center;
 }
 
 .title {
@@ -38,36 +41,40 @@
 
 .q-square1 {
   width: 15rem;
-  height: 15rem;
+  height: 10rem;
   background-color: #e4f3ff;
   position: absolute;
-  left: 30vw;
-  top: -5vh;
+  right: 50%;
+  top: 0%;
+  z-index: -1;
 }
 
 .q-square2 {
-  width: 20rem;
-  height: 15rem;
-  background-color: #c7ddef;
+  width: 15rem;
+  height: 10rem;
+  background-color: #e4f3ff;
   position: absolute;
-  left: 50rem;
-  top: 17rem;
+  left: 50%;
+  top: 73%;
+  z-index: -1;
 }
 
 .circle1 {
   position: absolute;
-  left: 75vw;
-  top: -3vh;
   width: 10rem;
   height: 10rem;
   background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='20' height='20' patternTransform='scale(1.4) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,1)'/><path d='M10 15a5 5 0 110-10 5 5 0 010 10z'  stroke-width='1' stroke='hsla(206, 98%, 36%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+  z-index: -2;
+  left: 100%;
+  top: -3%;
 }
 
 .circle2 {
   position: absolute;
-  left: 5vw;
-  top: 25vh;
+  left: -28%;
+  top: 70%;
   width: 10rem;
   height: 10rem;
   background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='40' patternTransform='scale(00.5rem) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,1)'/><path d='M11 6a5 5 0 01-5 5 5 5 0 01-5-5 5 5 0 015-5 5 5 0 015 5'  stroke-width='1' stroke='none' fill='hsla(206, 98%, 36%, 1)'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+  z-index: -2;
 }

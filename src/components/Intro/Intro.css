@@ -4,14 +4,17 @@
   position: relative;
   min-height: 90vh;
   overflow: hidden;
-  /* height: auto; */
-  /* background-color: aliceblue; */
-  border-bottom: 3rem solid var(--darkBlue);
+  border-bottom: 2vh solid var(--primaryBlue);
 }
 
+.blue-line {
+  background-color: var(--lightBlue);
+  margin-bottom: 1vh;
+  height: 2vh;
+}
 .yatora {
   position: relative;
-  height: 90vh;
+  height: 95vh;
   overflow: hidden;
 }
 .mc {
@@ -24,9 +27,11 @@
 .i-logo {
   position: absolute;
   /* height: 100vh; */
-  /* transform:  translate(22%, 22%); */
-  /* transform: scale(0.7); */
+  /* transform: translate(22%, 22%); */
+  /* transform: scale(0.5); */
+  height: 12rem;
   top: 120%;
+  right: 5%;
   /* left: 70%; */
 }
 
@@ -35,12 +40,13 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  left: 64%;
+  right: 5%;
   top: 18%;
+  /* background: white; */
 }
 
 .i-title span {
-  line-height: 7rem;
+  line-height: 6.5rem;
   font-family: "Archivo Black", sans-serif;
   z-index: 2;
   -webkit-mask-image: url(../../img/texture1.png);
@@ -48,7 +54,7 @@
 }
 
 .i-title > span:nth-of-type(1) {
-  font-size: 8rem;
+  font-size: 7.5rem;
   color: var(--lightBlue);
   mask-size: 120%;
   mask-position: 20% 40%;
@@ -66,12 +72,13 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  left: 80%;
-  top: 88%;
+  right: 5%;
+  top: 85%;
   color: var(--primaryBlue);
 }
 
 .i-author span {
-  font-size: 2rem;
+  font-size: 1.5rem;
   white-space: nowrap;
+  color: var(--primaryBlue);
 }

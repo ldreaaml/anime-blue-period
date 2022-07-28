@@ -4,39 +4,17 @@ import Blue from "../../img/blue.jpg";
 import { motion, AnimatePresence } from "framer-motion";
 
 const About = () => {
-  const container = {
-    hidden: { opacity: 0 },
-    show: {
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
       opacity: 1,
-      transition: {
-        delayChildren: 0.5,
-      },
     },
   };
   return (
     <div className="about" id="About">
       <div className="a-wrapper">
-        <motion.div
-          className="a-left"
-          // initial={{ x: "10%" }}
-          // animate={{ x: "calc(100vw - 100%)" }}
-          // initial={{ backgroundColor: "red", y: "calc(100vw + 100%)" }}
-          // whileInView={{
-          //   backgroundColor: "#ffcccc",
-          //   y: "0",
-          // }}
-          // exit={{
-          //   backgroundColor: "#fffccc",
-          //   transition: {
-          //     backgroundColor: { delay: 0 },
-          //     opacity: { delay: 0.1 },
-          //   },
-          // }}
-          transition={{
-            duration: 1,
-            // delay: 0.5,
-          }}
-        >
+        <motion.div className="a-left">
           <span>
             About <span>Blue</span> Period
           </span>
