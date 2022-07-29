@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/blue-period/static/css/main.5c5acc43.css",
+    "main.js": "/blue-period/static/js/main.5f084751.js",
+    "static/media/Banner_Yatora.jfif": "/blue-period/static/media/Banner_Yatora.6e3f3c31d71cb1a958c3.jfif",
+    "static/media/blue.jpg": "/blue-period/static/media/blue.7c0dc623debc7933bf57.jpg",
+    "static/media/Yotosuke.webp": "/blue-period/static/media/Yotosuke.b9778dd3219f324c4891.webp",
+    "static/media/Ryuji.webp": "/blue-period/static/media/Ryuji.2e6058b83221d23b6450.webp",
+    "static/media/Yatora.webp": "/blue-period/static/media/Yatora.8c322ee77a944e59c603.webp",
+    "static/media/Maki.webp": "/blue-period/static/media/Maki.e6f6c3383035b61da225.webp",
+    "static/media/logo.png": "/blue-period/static/media/logo.d188ed8f678e8a0542c2.png",
+    "static/media/Haruka.webp": "/blue-period/static/media/Haruka.ee24630d28116bdf0e0d.webp",
+    "static/media/yatora_manga.webp": "/blue-period/static/media/yatora_manga.d8e799c4eeb5da7f437e.webp",
+    "static/media/texture1.png": "/blue-period/static/media/texture1.2b691d05de70b5e15bb6.png",
+    "static/media/ooba_manga.webp": "/blue-period/static/media/ooba_manga.2aa0b12a252813de6de9.webp",
+    "static/media/haruka_manga.webp": "/blue-period/static/media/haruka_manga.813e375159eb83a1c0cc.webp",
+    "static/media/maki_manga.jpg": "/blue-period/static/media/maki_manga.2c10ded051faeb441f48.jpg",
+    "static/media/ryuji_manga.webp": "/blue-period/static/media/ryuji_manga.2ba67f9cf57ed4b74393.webp",
+    "static/media/mori_manga.webp": "/blue-period/static/media/mori_manga.72777269fc7839798a5c.webp",
+    "static/media/masako_manga.webp": "/blue-period/static/media/masako_manga.690506030e70f23148a3.webp",
+    "index.html": "/blue-period/index.html",
+    "main.5c5acc43.css.map": "/blue-period/static/css/main.5c5acc43.css.map",
+    "main.5f084751.js.map": "/blue-period/static/js/main.5f084751.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c5acc43.css",
+    "static/js/main.5f084751.js"
+  ]
+}
