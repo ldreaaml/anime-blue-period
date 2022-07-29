@@ -56,3 +56,21 @@
   color: white;
   transition: all 0.3s ease;
 }
+
+@media screen and (max-width: 720px) {
+  .nav-link {
+    visibility: hidden;
+    text-align: center;
+  }
+  .n-wrapper {
+    background-color: aqua;
+    visibility: hidden;
+    height: 0;
+    /* display: flex;
+    justify-content: center; */
+  }
+  .n-left {
+    flex: 1;
+    background: chartreuse;
+  }
+}

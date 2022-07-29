@@ -20,6 +20,7 @@
   font-weight: 700;
   color: white;
   -webkit-text-stroke: 0.1rem var(--primaryBlue);
+  white-space: nowrap;
 }
 .title > :not(span:nth-of-type(2)) {
   font-size: 4.2rem;

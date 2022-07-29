@@ -31,10 +31,10 @@
 .square1 {
   position: absolute;
   width: 10rem;
-  height: 10rem;
+  height: 15rem;
   background-color: #9bb8d4;
-  right: 1rem;
-  top: 4rem;
+  right: 5%;
+  bottom: 56%;
 }
 
 .square2 {
@@ -42,8 +42,8 @@
   width: 10rem;
   height: 15rem;
   background-color: #c3e4f3;
-  left: 1rem;
-  top: 22rem;
+  left: 3%;
+  top: 53%;
 }
 
 .a-left {
@@ -52,7 +52,7 @@
   flex-direction: column;
   position: relative;
   gap: 1.5rem;
-  width: 100vw;
+  /* width: 100vw; */
   padding: 1.5rem;
   max-width: 120ch;
   min-width: 60ch;
@@ -71,4 +71,10 @@
 
 .a-left span:nth-of-type(2) {
   font-size: 1.7rem;
+}
+
+@media screen and (max-width: 700px) {
+  .a-wrapper {
+    flex-direction: column;
+  }
 }
