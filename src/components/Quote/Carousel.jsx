@@ -1,7 +1,6 @@
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import { config } from "react-spring";
-import Pic from "../../img/blue.jpg";
 import Haruka from "../../img/haruka_manga.webp";
 import Mori from "../../img/mori_manga.webp";
 import Ooba from "../../img/ooba_manga.webp";
@@ -11,7 +10,7 @@ import Masako from "../../img/masako_manga.webp";
 import Maki from "../../img/maki_manga.jpg";
 import QuoteCard from "./QuoteCard.jsx";
 import Carousel from "react-spring-3d-carousel";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const QuoteCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

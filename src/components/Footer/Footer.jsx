@@ -7,7 +7,7 @@ import { incrementLikes, incrementViews } from "../../firebase";
 import { useState, useEffect } from "react";
 import { getDatabase, ref, onValue } from "firebase/database";
 import { motion } from "framer-motion";
-import { useSpring, animated, config, set, to } from "react-spring";
+import { useSpring, animated, config } from "react-spring";
 
 const Footer = () => {
   const [likeCount, setLikeCount] = useState(0);

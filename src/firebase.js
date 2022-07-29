@@ -1,14 +1,5 @@
-import { initializeApp, ServerValue } from "firebase/app";
-import {
-  getDatabase,
-  ref,
-  child,
-  onValue,
-  push,
-  set,
-  update,
-  increment,
-} from "firebase/database";
+import { initializeApp } from "firebase/app";
+import { getDatabase, ref, update, increment } from "firebase/database";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDXoG7IOUwaaRobWJGrR3u1-1cZl68QGfY",
